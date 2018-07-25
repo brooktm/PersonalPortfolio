@@ -1,0 +1,14 @@
+{
+  "name": "personal-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss / -o portfolio/css/ --recursive"
+  },
+  "author": "Brook",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.9.2"
+  }
+}
