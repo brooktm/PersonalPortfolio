@@ -2,7 +2,9 @@ nav .brand {
   height: 100px;
   width: auto;
   float: left;
-  margin-top: 20px; }
+  margin-top: 20px;
+  font-family: "Meddon", cursive;
+  color: #91c142; }
 
 nav .main-nav {
   float: right;
@@ -35,6 +37,9 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
   margin: 0; }
+
+section {
+  padding: 80px 0; }
 
 .row {
   max-width: 1140px;
@@ -69,3 +74,41 @@ header {
         header .hero-text-box .icons a :hover {
           color: #91c142;
           transition: all 4s ease-out; }
+
+#about-me {
+  background-color: #fdfdfd; }
+  #about-me h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px; }
+  #about-me h2:after {
+    display: block;
+    height: 2px;
+    background-color: #91c142;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px; }
+  #about-me .long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%; }
+
+.about-me-box {
+  display: flex;
+  flex-basis: 30%;
+  flex-direction: row; }
+  .about-me-box .box {
+    padding: 1%; }
+  .about-me-box h3 {
+    font-size: 110%;
+    margin-bottom: 15px; }
+  .about-me-box p {
+    font-size: 90%;
+    line-height: 145%; }
+  .about-me-box .icon-big {
+    font-size: 350%;
+    display: block;
+    color: #91c142;
+    margin-bottom: 10px; }

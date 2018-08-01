@@ -18,6 +18,9 @@ body {
   line-height: 1.5;
   margin: 0;
 }
+section {
+  padding: 80px 0;
+}
 .row {
   max-width: 1140px;
   margin: 0 auto;
@@ -62,9 +65,49 @@ header {
   }
 }
 
-//reusable component
-
-// .row {
-//   max-width: 1140px;
-//   margin: 0 auto;
-// }
+//about me section
+#about-me {
+  background-color: #fdfdfd;
+  h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  h2:after {
+    display: block;
+    height: 2px;
+    background-color: $secondary-color;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  .long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+  }
+}
+.about-me-box {
+  display: flex;
+  flex-basis: 30%;
+  flex-direction: row;
+  .box {
+    padding: 1%;
+  }
+  h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+  }
+  p {
+    font-size: 90%;
+    line-height: 145%;
+  }
+  .icon-big {
+    font-size: 350%;
+    display: block;
+    color: $secondary-color;
+    margin-bottom: 10px;
+  }
+}
