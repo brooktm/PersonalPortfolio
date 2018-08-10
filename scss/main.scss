@@ -2,10 +2,6 @@
 @import "variables";
 @import "mixins";
 
-@mixin easeOut {
-  transition: all 4s ease-out;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +10,10 @@
 html,
 body {
   background-color: $primary-color;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f0f0;
+  font-size: 17px;
+  line-height: 1.4;
+  font-family: "Jaldi", sans-serif;
   line-height: 1.5;
   margin: 0;
 }
@@ -111,3 +110,5 @@ header {
     margin-bottom: 10px;
   }
 }
+
+//my work section
