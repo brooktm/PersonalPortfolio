@@ -9,8 +9,12 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="jquery-3.3.1.min.js"></script>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
 
     <title>Document</title>
 </head>
@@ -18,21 +22,24 @@
 <body>
     <header>
         <nav>
-            <div class="row">
+            <div class="topnav" id="myTopnav">
                 <h1 class="brand">Brook</h1>
                 <ul class="main-nav">
                     <li> <a href="#">My Work</a></li>
                     <li><a href=""> About Me</a> </li>
                     <li> <a href="">Tutorials</a> </li>
                     <li> <a href="">Contact Me </a> </li>
+                    <li> <a href="javascript:void(0);" class="icon">
+    <i class="fa fa-bars"></i>
+  </a></li>
                 </ul>
             </div>
         </nav>
         <div class="hero-text-box">
             <h1>Web <span>Developer</span> </h1>
             <div class="icons">
-                <a href="# "> <i class="fab fa-linkedin fa-2x "></i></a>
-                <a href="# "> <i class="fab fa-github fa-2x "></i></i></a>
+                <a href="# "> <i class="fab fa-linkedin fa-2x animated  rotateIn"></i></a>
+                <a href="# "> <i class="fab fa-github fa-2x animated  rotateIn"></i></i></a>
             </div>
         </div>
     </header>
@@ -73,136 +80,58 @@
     </Section>
     <section id="my-work">
 
-        <div class="container">
-            <div class="cards">
-                <a class="card" href="#">
-			<span class="card-header" style="background-image: url(http://placeimg.com/400/200/animals);">
-				<span class="card-title">
-					<h3>This is a title for a card</h3>
-				</span>
-			</span>
-			<span class="card-summary">
-				A summary will also be present. Usually two to three brief sentences about the content on the detail page.
-			</span>
-			<span class="card-meta">
-				Published: June 18th, 2015
-			</span>
-		</a>
 
-                <a class="card" href="#">
-			<span class="card-header" style="background-image: url(http://placeimg.com/640/480/nature);">
-				<span class="card-title">
-					<h3>This is a title for a card that is a bit longer in length</h3>
-				</span>
-			</span>
-			<span class="card-summary">
-				Each card is created from an &lt;a&gt; tag so the whole card is linked.
-			</span>
-			<span class="card-meta">
-				Published: June 18th, 2015
-			</span>
-		</a>
+        <div class="work">
+            <div class="cards-container">
 
-                <a class="card" href="#">
-			<span class="card-header" style="background-image: url(http://placeimg.com/400/400/people)">
-				<span class="card-title">
-					<h3>This is a title for a card</h3>
-				</span>
-			</span>
-			<span class="card-summary">
-				Using Flexbox is such a an easy, well supported way for grid-style content, such as cards. The cards height will expand to match the longest item.
-			</span>
-			<span class="card-meta">
-				Published: June 18th, 2015
-			</span>
-		</a>
 
-                <a class="card" href="#">
-			<span class="card-header" style="background-image: url(http://placeimg.com/400/200/tech);">
-				<span class="card-title">
-					<h3>This is a title for a card</h3>
-				</span>
-			</span>
-			<span class="card-summary">
-				A summary will also be present. Usually two to three brief sentences about the content on the detail page.
-			</span>
-			<span class="card-meta">
-				Published: June 18th, 2015
-			</span>
-		</a>
+                <div class="card" style="margin: 70px auto" ;>
+                    <div class="card-image" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.0) 0%, rgba(0,36,61,0.0) 50%), url('https://images.unsplash.com/photo-1492854536278-1f94bbec5732?auto=format&fit=crop&w=1350&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D');">
+                        <a class="card-link" href="http://www.florentlienard.com"></a></div>
+                    <div class="card-footer">
+                        <span class="work-skills">UX - DESIGN - DEVELOPMENT</span>
+                        <span class="work-name">Leasy</span>
+                        <span class="work-description">SAAS solution for property managers eager to gain in productivity.</span>
+                        <a href="http://www.florentlienard.com" class="btn-learn-more">Learn more</a>
+                    </div>
+                </div>
 
-                <a class="card" href="#">
-			<span class="card-header" style="background-image: url(http://placeimg.com/400/200/people);">
-				<span class="card-title">
-					<h3>This is a title for a card</h3>
-				</span>
-			</span>
-			<span class="card-summary">
-				Each card is created from an &lt;a&gt; tag so the whole card is linked.
-			</span>
-			<span class="card-meta">
-				Published: June 18th, 2015
-			</span>
-		</a>
+                <div class="card" style="margin: 70px auto" ;>
+                    <div class="card-image" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.0) 0%, rgba(0,36,61,0.0) 50%), url('https://images.unsplash.com/photo-1492854536278-1f94bbec5732?auto=format&fit=crop&w=1350&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D');">
+                        <a class="card-link" href="http://www.florentlienard.com"></a></div>
+                    <div class="card-footer">
+                        <span class="work-skills">UX - DESIGN - DEVELOPMENT</span>
+                        <span class="work-name">Leasy</span>
+                        <span class="work-description">SAAS solution for property managers eager to gain in productivity.</span>
+                        <a href="http://www.florentlienard.com" class="btn-learn-more">Learn more</a>
+                    </div>
+                </div>
 
-                <a class="card" href="#">
-			<span class="card-header" style="background-image: url(http://placeimg.com/400/250/nature);">
-				<span class="card-title">
-					<h3>This is a title for a card</h3>
-				</span>
-			</span>
-			<span class="card-summary">
-				Using Flexbox is such a an easy, well supported way for grid-style content, such as cards. The cards height will expand to match the longest item.
-			</span>
-			<span class="card-meta">
-				Published: June 18th, 2015
-			</span>
-		</a>
-
-                <a class="card" href="#">
-			<span class="card-header" style="background-image: url(http://placeimg.com/400/250/animals);">
-				<span class="card-title">
-					<h3>This is a title for a card</h3>
-				</span>
-			</span>
-			<span class="card-summary">
-				A summary will also be present. Usually two to three brief sentences about the content on the detail page.
-			</span>
-			<span class="card-meta">
-				Published: June 18th, 2015
-			</span>
-		</a>
-
-                <a class="card" href="#">
-			<span class="card-header" style="background-image: url(http://placeimg.com/600/600/people);">
-				<span class="card-title">
-					<h3>This is a title for a card</h3>
-				</span>
-			</span>
-			<span class="card-summary">
-				Each card is created from an &lt;a&gt; tag so the whole card is linked.
-			</span>
-			<span class="card-meta">
-				Published: June 18th, 2015
-			</span>
-		</a>
-
-                <a class="card" href="#">
-			<span class="card-header" style="background-image: url(http://placeimg.com/400/400/tech);">
-				<span class="card-title">
-					<h3>This is a title for a card</h3>
-				</span>
-			</span>
-			<span class="card-summary">
-				Using Flexbox is such a an easy, well supported way for grid-style content, such as cards. The cards height will expand to match the longest item.
-			</span>
-			<span class="card-meta">
-				Published: June 18th, 2015
-			</span>
-		</a>
+                <div class="card" style="margin: 70px auto" ;>
+                    <div class="card-image-slice" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.0) 0%, rgba(0,36,61,0.0) 50%), url('https://images.unsplash.com/photo-1511516412963-801b050c92aa?auto=format&fit=crop&w=1350&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D');">
+                        <a class="card-link" href="http://www.florentlienard.com"></a></div>
+                    <div class="card-footer">
+                        <span class="work-skills">UX - DESIGN - DEVELOPMENT</span>
+                        <span class="work-name">UI Slice</span>
+                        <span class="work-description">Curated directory of UI components to help you build your website.</span>
+                        <a href="http://www.florentlienard.com" class="btn-learn-more">Learn more</a>
+                    </div>
+                </div>
+                <div class="card" style="margin: 70px auto" ;>
+                    <div class="card-image-slice" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.0) 0%, rgba(0,36,61,0.0) 50%), url('https://images.unsplash.com/photo-1511516412963-801b050c92aa?auto=format&fit=crop&w=1350&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D');">
+                        <a class="card-link" href="http://www.florentlienard.com"></a></div>
+                    <div class="card-footer">
+                        <span class="work-skills">UX - DESIGN - DEVELOPMENT</span>
+                        <span class="work-name">UI Slice</span>
+                        <span class="work-description">Curated directory of UI components to help you build your website.</span>
+                        <a href="http://www.florentlienard.com" class="btn-learn-more">Learn more</a>
+                    </div>
+                </div>
             </div>
-        </div>
+
     </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js">
+    </script>
     <script src="js/main.js "></script>
 
 </body>

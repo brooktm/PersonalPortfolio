@@ -31,6 +31,9 @@ header {
   background-size: cover;
   background-position: center;
   margin: 0;
+  .brand {
+    margin-left: 15px;
+  }
   h1 {
     margin: 0;
     color: #fff;
@@ -40,6 +43,18 @@ header {
     span {
       color: $secondary-color;
     }
+  }
+  .brand::after {
+    content: "";
+    display: block;
+    height: 3px;
+    background-color: $secondary-color;
+  }
+  .brand::before {
+    content: "";
+    display: block;
+    height: 3px;
+    background-color: $secondary-color;
   }
   .hero-text-box {
     position: absolute;
@@ -62,6 +77,10 @@ header {
       }
     }
   }
+}
+
+.icon {
+  display: none;
 }
 
 //about me section
@@ -111,4 +130,133 @@ header {
   }
 }
 
-//my work section
+//my work cards
+
+// body {
+//   font-family: "Maven Pro", sans-serif;
+// }
+
+.cards-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 300px;
+  margin: 10px auto;
+  border-radius: 1px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  border-radius: 2px;
+  transition: 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
+}
+
+.card-slice {
+  width: 300px;
+  margin: 10px auto;
+  border-radius: 1px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  position: relative;
+  border-radius: 2px;
+  transition: 0.2s;
+}
+
+.card-slice:hover {
+  transition: 0.3s;
+}
+
+.card-image {
+  background-size: cover;
+  color: black;
+  height: 175px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  background-position: center;
+}
+
+.card-image-slice {
+  background-size: cover;
+  height: 175px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  background-position: center;
+}
+
+.work-skills {
+  color: lightgray;
+  margin: 5px 0px;
+  font-size: 14px;
+}
+
+.card-footer {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.work-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.work-description {
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: lighter;
+  color: grey;
+}
+
+.btn-learn-more {
+  margin: 0px auto;
+  margin-top: 35px;
+  color: #42a5f5;
+  border: 1px solid #42a5f5;
+  padding: 10px 15px;
+  width: 55%;
+  text-align: center;
+  border-radius: 3px;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: 0.2s;
+  font-size: 18px;
+  z-index: 4;
+}
+
+.btn-learn-more:hover {
+  text-decoration: none;
+  opacity: 1;
+  transition: 0.2s;
+}
+
+.card-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
+  background: black;
+  opacity: 0;
+}
+
+.contact-container {
+  width: 70%;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.contact-container a {
+  text-decoration: none;
+  color: #42a5f5;
+}
