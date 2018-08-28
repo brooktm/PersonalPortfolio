@@ -62,6 +62,10 @@ header {
       }
       .fab:hover {
         color: $secondary-color;
+        transition: all 0.5s ease-out;
+      }
+      a {
+        margin-right: 5px;
       }
     }
   }
@@ -125,7 +129,8 @@ h2:after {
 // new nav
 nav {
   //top: 0; // Fix the menu to the top
-  //position: fixed; // Fix the menu to the top
+  position: fixed; // Fix the menu to the top
+  z-index: 3;
   height: 40px;
   width: 100%;
   background-color: $menu-bg;
@@ -148,7 +153,8 @@ nav {
     text-decoration: none;
   }
   li:hover {
-    background-color: $menu-hover;
+    background-color: $secondary-color;
+    @include easeOut;
   }
   a#openup {
     display: none;
@@ -178,7 +184,7 @@ nav {
       border-bottom: 1px solid $menu-border;
     }
     a:hover {
-      background: $menu-hover;
+      background: $secondary-color;
     }
     a#openup:after {
       content: "|||";
@@ -200,6 +206,19 @@ nav {
       width: 100%;
       position: relative;
     }
+  }
+  .cf:before,
+  .cf:after {
+    content: "";
+    display: table;
+  }
+
+  .cf:after {
+    clear: both;
+  }
+
+  .cf {
+    zoom: 1;
   } //nav
 } // media
 // //////////
@@ -334,8 +353,8 @@ nav {
 
 form {
   font-family: "roboto", sans-serif;
-  width: $width + 60px;
-  margin: 100px auto 0;
+  width: $width + 150px;
+  margin: 0 auto;
   box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
   padding: 0 0 40px;
   border-radius: 3px;
@@ -354,7 +373,7 @@ textarea {
   font: inherit;
   font-size: 0.8em;
   margin: 28px 25px 10px;
-  width: $width;
+  width: $width + 100px;
   display: block;
   border: none;
   padding: 20px 0 10px;
@@ -451,16 +470,17 @@ input[type="email"] {
 }
 
 button {
-  font-family: "roboto", sans-serif;
   transition: transform 0.2s $cubic, box-shadow 0.2s $cubic;
   border: none;
   background: $base;
+
   cursor: pointer;
-  border-radius: 3px;
+  border-radius: 5px;
   padding: 6px;
+  margin-left: 10px;
   width: $width;
   color: white;
-  margin: 30px 0 0 25px;
+  margin: 30px 0 0 60px;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
   &:hover {
     transform: translateY(-2px);
@@ -468,23 +488,10 @@ button {
   }
 }
 
-/*a {
-  display: inline-block;
-  width: 100%;
-  margin-top: 50px;
-  text-align: center;
-  font-family: 'roboto', sans-serif;
-  text-decoration: none;
-  color: $base;
-  i {
-    margin-right: 5px;
-  }
-}*/
-
 .contact {
   width: 42px;
   height: 42px;
-  border-radius: 50px;
+  border-radius: 5px;
   background: $base;
   display: inline-block;
   margin: 50px calc(50% - 21px);
